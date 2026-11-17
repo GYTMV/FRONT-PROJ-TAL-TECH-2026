@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florería Garden</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+
+            <li>
+                <a href="carrito.html">
+                    🛒 Ver Carrito
+                    <span id="contador-carrito">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Cabecera -->
+    <header>
+        <img src="IMAGE/florhead.png" alt="Logo de la florería">
+        <h1>FLORERÍA GARDEN</h1>
+    </header>
+
+    <main>
+
+        <!-- Productos -->
+        <section class="productos" id="productos">
+
+            <div class="card">
+                <h3>Flor Amarilla</h3>
+                <p>Hermosa flor decorativa.</p>
+                <p class="precio">$1500</p>
+
+                <img src="IMAGE/floramar.png" alt="Flor Amarilla">
+
+                <button class="agregar"
+                        data-producto="Flor Amarilla"
+                        data-precio="1500">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Flor Roja</h3>
+                <p>Ideal para regalos especiales.</p>
+                <p class="precio">$1800</p>
+
+                <img src="IMAGE/florred.png" alt="Flor Roja">
+
+                <button class="agregar"
+                        data-producto="Flor Roja"
+                        data-precio="1800">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Tulipán</h3>
+                <p>Elegante y colorido.</p>
+                <p class="precio">$2000</p>
+
+                <img src="IMAGE/tulipan.png" alt="Tulipán">
+
+                <button class="agregar"
+                        data-producto="Tulipán"
+                        data-precio="2000">
+                    Agregar al carrito
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Video -->
+        <section class="video">
+            <video controls muted loop autoplay>
+                <source src="florv.mp4" type="video/mp4">
+                Tu navegador no soporta HTML5.
+            </video>
+        </section>
+
+        <!-- Quiénes Somos -->
+        <section class="quienes-somos" id="quienes-somos">
+
+            <h2>Quiénes Somos</h2>
+
+            <p>
+                Somos una florería dedicada a brindar las flores más frescas
+                y hermosas para cada ocasión.
+            </p>
+
+            <p>
+                Nuestro compromiso es ofrecer calidad y servicio excepcional
+                a nuestros clientes.
+            </p>
+
+            <p>
+                Visítanos y descubre la belleza de nuestras flores.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Florería Garden. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="contador.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
